@@ -1,21 +1,70 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# Created by Gemini
+
+# #######################
+# ## Go Binaries
+# #######################
+# This section is for your specific project structure.
+# It ignores the compiled executable file inside each of your study folders.
+# For example, it will ignore the file "hello-world" inside the "hello-world/" directory.
+basic-api/basic-api
+basic-types-vars-control-flow/basic-types-vars-control-flow
+cli/cli
+consume-api/consume-api
+functions/functions
+hello-world/hello-world
+interface/interface
+io/io
+json-parsing/json-parsing
+length-capacity/length-capacity
+map/map
+mutex/mutex
+system-commands/system-commands
+test/test
+web-server/web-server
+
+
+# A more generic rule for any future executables on Windows
 *.exe
 *.exe~
-*.dll
-*.so
-*.dylib
 
-# Test binary, built with `go test -c`
+# #######################
+# ## Go Dependencies
+# #######################
+# Ignore vendor directory if you use it
+vendor/
+
+# #######################
+# ## Go Build/Test Files
+# #######################
+# Ignore test binaries
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Ignore coverage files
 *.out
+cover.out
+coverage.txt
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# #######################
+# ## OS & Editor Files
+# #######################
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Go workspace file
-go.work
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Ignore IDE/Editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# #######################
+# ## Log Files
+# #######################
+*.log
